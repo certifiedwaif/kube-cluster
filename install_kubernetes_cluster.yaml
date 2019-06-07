@@ -1,0 +1,4 @@
+- include: initial.yaml
+- include: kube-dependencies.yaml
+- include: master.yaml
+- include: workers.yaml
