@@ -12,6 +12,9 @@
         regexp: '^(.+?\sswap\s+sw\s+.*)$'
         replace: '# \1'
 
+    - name: kubeadm reset
+      shell: kubeadm reset
+
     - name: get join command
       shell: kubeadm token create --print-join-command
       register: join_command_raw
